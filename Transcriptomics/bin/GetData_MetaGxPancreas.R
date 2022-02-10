@@ -113,7 +113,7 @@ save( data , clinical , file = "../data/MetaGxPancreas.RData" )
 ##########################################
 
 load( "../data/MetaGxPancreas.RData" )
-library(genefu)
+
 data_meta = data
 clinical_meta = clinical
 

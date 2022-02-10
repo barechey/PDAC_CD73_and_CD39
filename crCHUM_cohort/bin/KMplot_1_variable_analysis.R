@@ -1,9 +1,8 @@
 
 library(Cairo)
-library(forestplot)
-library(DescTools)
-library(sva)
 library(genefu)
+library(sva)
+library(survminer)
 
 
 ############################################################################
@@ -60,7 +59,6 @@ for(i in 1: length( id ) ){
 
 data$CD8_cm_tot = as.numeric( as.character( data$CD8_cm_tot ) )
 
-library(survminer)
 
 os.cut <- surv_cutpoint(
 	data,

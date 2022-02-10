@@ -1,10 +1,8 @@
 
 library(Cairo)
-library(forestplot)
-library(DescTools)
-library(sva)
 library(genefu)
-
+library(sva)
+library(survminer)
 
 ############################################################################
 ############################################################################

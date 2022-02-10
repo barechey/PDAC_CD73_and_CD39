@@ -1,4 +1,7 @@
 
+library(beeswarm)
+library(Cairo)
+
 tumor = as.numeric( as.character( read.csv( file = "../data/CD73_soluble.txt" , stringsAsFactors = FALSE , sep = "\t" , header = TRUE , dec = ',' )[ , "CD73_level_homemade_ELISA" ] ) )
 
 hb = read.csv( file = "../data/CD73_soluble_H-B.txt" , stringsAsFactors = FALSE , sep = "\t" , header = TRUE , dec = ',' )
@@ -19,9 +22,6 @@ colnames(data) = c( "sample" , "CD73" )
 data$sample = as.character( data$sample )
 data$sample = factor( data$sample , levels = c( "H" , "BT" ) )
 data$CD73 = as.numeric( as.character( data$CD73 ) )
-
-library(beeswarm)
-library(Cairo)
 
 CairoPDF( "../result/Soluble/Boxplot_sCD73.pdf" , height=4, width=3.5, bg="transparent")
 	
