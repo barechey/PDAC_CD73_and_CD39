@@ -11,6 +11,11 @@
 ------------------------
 ------------------------
 
+NOTE : The crCHUM cohort data are not available for the moment.
+
+------------------------
+------------------------
+
 ## R Package requirement:
 - beeswarm: https://cran.r-project.org/web/packages/beeswarm/index.html
 - Cairo: https://cran.r-project.org/web/packages/Cairo/index.html
